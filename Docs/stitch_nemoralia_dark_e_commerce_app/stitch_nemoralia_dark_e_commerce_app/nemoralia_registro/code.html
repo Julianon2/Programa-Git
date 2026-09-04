@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nemoralia - Registro</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ffdad6",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#fff7f6",
+                    "surface-variant": "#343440",
+                    "error-container": "#93000a",
+                    "inverse-primary": "#c00016",
+                    "surface-bright": "#383844",
+                    "surface": "#12121d",
+                    "on-primary": "#690007",
+                    "on-primary-fixed": "#410003",
+                    "on-primary-fixed-variant": "#93000e",
+                    "primary-fixed-dim": "#ffb4ac",
+                    "primary": "#ffb4ac",
+                    "on-secondary-fixed": "#410003",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary": "#003355",
+                    "surface-container-low": "#1b1a26",
+                    "on-secondary-container": "#ff9990",
+                    "tertiary-fixed": "#d0e4ff",
+                    "secondary-fixed-dim": "#ffb4ac",
+                    "tertiary-container": "#0077bf",
+                    "inverse-surface": "#e3e0f1",
+                    "surface-container-high": "#292935",
+                    "on-secondary": "#690007",
+                    "tertiary-fixed-dim": "#9acbff",
+                    "on-surface-variant": "#e8bcb8",
+                    "on-tertiary-fixed": "#001d34",
+                    "secondary": "#ffb4ac",
+                    "surface-container": "#1f1f2a",
+                    "background": "#12121d",
+                    "surface-container-lowest": "#0d0d18",
+                    "on-surface": "#e3e0f1",
+                    "outline": "#ae8783",
+                    "surface-dim": "#12121d",
+                    "on-background": "#e3e0f1",
+                    "on-error": "#690005",
+                    "tertiary": "#9acbff",
+                    "on-tertiary-container": "#f7f9ff",
+                    "primary-fixed": "#ffdad6",
+                    "secondary-container": "#8d1416",
+                    "on-tertiary-fixed-variant": "#004a79",
+                    "inverse-on-surface": "#302f3b",
+                    "surface-tint": "#ffb4ac",
+                    "on-secondary-fixed-variant": "#8d1416",
+                    "primary-container": "#e40e20",
+                    "surface-container-highest": "#343440",
+                    "outline-variant": "#5e3f3c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #12121d;
+            color: #e3e0f1;
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#12121d]/80 backdrop-blur-lg bg-gradient-to-b from-[#1b1a26] to-transparent shadow-none h-24">
+<div class="max-w-screen-2xl mx-auto px-8 flex justify-between items-center h-full">
+<div class="text-2xl font-bold tracking-tighter text-white font-headline">Nemoralia</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-gray-400 hover:text-white transition-colors duration-300 font-headline tracking-tight text-sm uppercase font-semibold" href="#">Home</a>
+<a class="text-gray-400 hover:text-white transition-colors duration-300 font-headline tracking-tight text-sm uppercase font-semibold" href="#">Catálogo</a>
+<a class="text-gray-400 hover:text-white transition-colors duration-300 font-headline tracking-tight text-sm uppercase font-semibold" href="#">Carrito</a>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-white relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-[#E40E20] after:rounded-full font-headline tracking-tight text-sm uppercase font-semibold active:scale-95 transition-transform" href="#">Registro</a>
+<a class="text-gray-400 hover:text-white transition-colors duration-300 font-headline tracking-tight text-sm uppercase font-semibold active:scale-95 transition-transform" href="#">Login</a>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex items-center justify-center pt-24 pb-12 px-6 relative overflow-hidden">
+<!-- Atmospheric Background Element -->
+<div class="absolute top-1/4 -left-20 w-96 h-96 bg-primary-container/10 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="absolute bottom-1/4 -right-20 w-96 h-96 bg-secondary-container/5 blur-[120px] rounded-full pointer-events-none"></div>
+<div class="w-full max-w-2xl z-10">
+<!-- Editorial Header -->
+<div class="mb-12 text-center md:text-left">
+<span class="font-label text-primary-container text-xs tracking-[0.3em] uppercase font-bold mb-4 block">Bienvenida a la Colección</span>
+<h1 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tighter text-white leading-tight">Únete a Nemoralia.</h1>
+<p class="font-body text-on-surface-variant mt-4 max-w-md text-lg">Acceso exclusivo a nuestra curaduría Midnight Editorial y lanzamientos limitados.</p>
+</div>
+<!-- Registration Form Card -->
+<div class="bg-surface-container-low rounded-xl p-8 md:p-12 shadow-2xl relative border border-white/5 backdrop-blur-sm">
+<form class="space-y-8">
+<!-- Section: Personal Info -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold px-1">Nombre</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-surface-variant" placeholder="Ej. Julian" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold px-1">Apellido</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-surface-variant" placeholder="Ej. Sorel" type="text"/>
+</div>
+</div>
+<!-- Email -->
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold px-1">Email</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-surface-variant" placeholder="hola@nemoralia.com" type="email"/>
+</div>
+<!-- Passwords -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold px-1">Contraseña</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all" placeholder="••••••••" type="password"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold px-1">Confirmar contraseña</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all" placeholder="••••••••" type="password"/>
+</div>
+</div>
+<!-- Meta Info -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold px-1">Fecha de nacimiento</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all" type="date"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant font-bold px-1">Teléfono</label>
+<input class="w-full bg-surface-container-high border-none rounded-lg p-4 text-on-surface focus:ring-2 focus:ring-primary-container transition-all placeholder:text-surface-variant" placeholder="+34 000 000 000" type="tel"/>
+</div>
+</div>
+<!-- Terms & Submit -->
+<div class="pt-6 space-y-6">
+<div class="flex items-start gap-3">
+<input class="mt-1 rounded bg-surface-container-highest border-none text-primary-container focus:ring-offset-background focus:ring-primary-container" type="checkbox"/>
+<label class="text-xs text-on-surface-variant font-body leading-relaxed">
+                                Acepto los <a class="text-white underline underline-offset-4 decoration-primary-container/50 hover:decoration-primary-container transition-all" href="#">Términos de Servicio</a> y la <a class="text-white underline underline-offset-4 decoration-primary-container/50 hover:decoration-primary-container transition-all" href="#">Política de Privacidad</a> de Nemoralia.
+                            </label>
+</div>
+<button class="w-full bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-headline font-bold py-5 rounded-lg text-sm tracking-widest uppercase transition-all active:scale-[0.98] shadow-lg shadow-primary-container/20" type="submit">
+                            Registrarse
+                        </button>
+<p class="text-center text-xs font-label text-on-surface-variant tracking-wider uppercase">
+                            ¿Ya tienes cuenta? <a class="text-white font-bold hover:text-primary-container transition-colors" href="#">Inicia Sesión</a>
+</p>
+</div>
+</form>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-[#12121d] border-t border-white/10 mt-auto">
+<div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-bold text-white font-headline">Nemoralia</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-manrope text-xs tracking-widest uppercase text-gray-500 hover:text-white transition-colors opacity-100 hover:opacity-80" href="#">Terms of Service</a>
+<a class="font-manrope text-xs tracking-widest uppercase text-gray-500 hover:text-white transition-colors opacity-100 hover:opacity-80" href="#">Privacy Policy</a>
+<a class="font-manrope text-xs tracking-widest uppercase text-gray-500 hover:text-white transition-colors opacity-100 hover:opacity-80" href="#">Shipping Info</a>
+<a class="font-manrope text-xs tracking-widest uppercase text-gray-500 hover:text-white transition-colors opacity-100 hover:opacity-80" href="#">Contact Us</a>
+</div>
+<div class="font-manrope text-xs tracking-widest uppercase text-gray-500">
+                © 2024 Nemoralia. Midnight Editorial Collection.
+            </div>
+</div>
+</footer>
+</body></html>

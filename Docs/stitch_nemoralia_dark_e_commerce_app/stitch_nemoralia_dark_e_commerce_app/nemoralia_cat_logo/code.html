@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Catálogo | Nemoralia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdad6",
+                        "error": "#ffb4ab",
+                        "on-primary-container": "#fff7f6",
+                        "surface-variant": "#343440",
+                        "error-container": "#93000a",
+                        "inverse-primary": "#c00016",
+                        "surface-bright": "#383844",
+                        "surface": "#12121d",
+                        "on-primary": "#690007",
+                        "on-primary-fixed": "#410003",
+                        "on-primary-fixed-variant": "#93000e",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "primary": "#ffb4ac",
+                        "on-secondary-fixed": "#410003",
+                        "on-error-container": "#ffdad6",
+                        "on-tertiary": "#003355",
+                        "surface-container-low": "#1b1a26",
+                        "on-secondary-container": "#ff9990",
+                        "tertiary-fixed": "#d0e4ff",
+                        "secondary-fixed-dim": "#ffb4ac",
+                        "tertiary-container": "#0077bf",
+                        "inverse-surface": "#e3e0f1",
+                        "surface-container-high": "#292935",
+                        "on-secondary": "#690007",
+                        "tertiary-fixed-dim": "#9acbff",
+                        "on-surface-variant": "#e8bcb8",
+                        "on-tertiary-fixed": "#001d34",
+                        "secondary": "#ffb4ac",
+                        "surface-container": "#1f1f2a",
+                        "background": "#12121d",
+                        "surface-container-lowest": "#0d0d18",
+                        "on-surface": "#e3e0f1",
+                        "outline": "#ae8783",
+                        "surface-dim": "#12121d",
+                        "on-background": "#e3e0f1",
+                        "on-error": "#690005",
+                        "tertiary": "#9acbff",
+                        "on-tertiary-container": "#f7f9ff",
+                        "primary-fixed": "#ffdad6",
+                        "secondary-container": "#8d1416",
+                        "on-tertiary-fixed-variant": "#004a79",
+                        "inverse-on-surface": "#302f3b",
+                        "surface-tint": "#ffb4ac",
+                        "on-secondary-fixed-variant": "#8d1416",
+                        "primary-container": "#e40e20",
+                        "surface-container-highest": "#343440",
+                        "outline-variant": "#5e3f3c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #12121d;
+            font-family: 'Manrope', sans-serif;
+            color: #e3e0f1;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar for editorial feel */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #12121d; }
+        ::-webkit-scrollbar-thumb { background: #292935; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #E40E20; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#12121d]/80 backdrop-blur-lg">
+<div class="max-w-screen-2xl mx-auto px-8 flex justify-between items-center h-24">
+<div class="text-2xl font-bold tracking-tighter text-white font-headline">Nemoralia</div>
+<div class="hidden md:flex items-center gap-10 font-headline tracking-tight text-sm uppercase font-semibold">
+<a class="text-gray-400 hover:text-white transition-colors duration-300 active:scale-95 transition-transform" href="#">Home</a>
+<a class="text-white relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-[#E40E20] after:rounded-full active:scale-95 transition-transform" href="#">Catálogo</a>
+<a class="text-gray-400 hover:text-white transition-colors duration-300 active:scale-95 transition-transform" href="#">Carrito</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-gray-400 hover:text-white transition-all duration-300">
+<span class="material-symbols-outlined">search</span>
+</button>
+<div class="flex gap-4 font-headline tracking-tight text-sm uppercase font-semibold">
+<button class="text-gray-400 hover:text-white transition-all duration-300 active:scale-95">Login</button>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-lg active:scale-95 transition-all duration-300">Registro</button>
+</div>
+</div>
+</div>
+<div class="h-px w-full bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+</nav>
+<main class="pt-32 pb-24 max-w-screen-2xl mx-auto px-8">
+<header class="mb-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<span class="text-primary-container font-headline text-xs tracking-[0.3em] uppercase font-bold mb-2 block">Midnight Editorial Collection</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold tracking-tighter text-white">Catálogo</h1>
+</div>
+<div class="flex items-center gap-4 text-on-surface-variant text-sm font-label uppercase tracking-widest">
+<span>124 Objetos Curados</span>
+<span class="h-px w-12 bg-white/20"></span>
+<span>Edición Limitada</span>
+</div>
+</div>
+</header>
+<div class="flex flex-col md:flex-row gap-12">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-64 flex-shrink-0">
+<div class="sticky top-32 space-y-12">
+<!-- Filter Group: Category -->
+<section>
+<h3 class="text-white font-headline text-sm uppercase tracking-widest font-bold mb-6">Categoría</h3>
+<div class="space-y-4">
+<label class="flex items-center group cursor-pointer">
+<input class="hidden peer" type="checkbox"/>
+<div class="w-4 h-4 rounded-full border border-outline-variant peer-checked:bg-primary-container peer-checked:border-primary-container transition-all"></div>
+<span class="ml-3 text-sm text-gray-400 group-hover:text-white transition-colors">Best Sellers</span>
+</label>
+<label class="flex items-center group cursor-pointer">
+<input checked="" class="hidden peer" type="checkbox"/>
+<div class="w-4 h-4 rounded-full border border-outline-variant peer-checked:bg-primary-container peer-checked:border-primary-container transition-all"></div>
+<span class="ml-3 text-sm text-white transition-colors">Midnight Series</span>
+</label>
+<label class="flex items-center group cursor-pointer">
+<input class="hidden peer" type="checkbox"/>
+<div class="w-4 h-4 rounded-full border border-outline-variant peer-checked:bg-primary-container peer-checked:border-primary-container transition-all"></div>
+<span class="ml-3 text-sm text-gray-400 group-hover:text-white transition-colors">Accesorios</span>
+</label>
+<label class="flex items-center group cursor-pointer">
+<input class="hidden peer" type="checkbox"/>
+<div class="w-4 h-4 rounded-full border border-outline-variant peer-checked:bg-primary-container peer-checked:border-primary-container transition-all"></div>
+<span class="ml-3 text-sm text-gray-400 group-hover:text-white transition-colors">Ediciones de Arte</span>
+</label>
+</div>
+</section>
+<!-- Filter Group: Price Range -->
+<section>
+<h3 class="text-white font-headline text-sm uppercase tracking-widest font-bold mb-6">Precio</h3>
+<div class="px-2">
+<input class="w-full h-1 bg-surface-container-high rounded-full appearance-none cursor-pointer accent-primary-container" type="range"/>
+<div class="flex justify-between mt-4 text-[10px] text-gray-500 uppercase tracking-tighter">
+<span>$0 USD</span>
+<span>$5000 USD</span>
+</div>
+</div>
+</section>
+<!-- Filter Group: Size -->
+<section>
+<h3 class="text-white font-headline text-sm uppercase tracking-widest font-bold mb-6">Talla</h3>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 text-[10px] font-bold border border-white/10 text-gray-400 hover:border-primary-container hover:text-white transition-all rounded-lg uppercase">S</button>
+<button class="py-2 text-[10px] font-bold border border-primary-container text-white transition-all rounded-lg uppercase">M</button>
+<button class="py-2 text-[10px] font-bold border border-white/10 text-gray-400 hover:border-primary-container hover:text-white transition-all rounded-lg uppercase">L</button>
+<button class="py-2 text-[10px] font-bold border border-white/10 text-gray-400 hover:border-primary-container hover:text-white transition-all rounded-lg uppercase">XL</button>
+<button class="py-2 text-[10px] font-bold border border-white/10 text-gray-400 hover:border-primary-container hover:text-white transition-all rounded-lg uppercase">XXL</button>
+</div>
+</section>
+<button class="w-full py-3 text-xs font-headline uppercase font-bold tracking-[0.2em] border border-white/10 hover:bg-white hover:text-surface transition-all rounded-lg active:scale-95">Limpiar Filtros</button>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-grow">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Product Card 1 -->
+<article class="group relative">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-700 group-hover:scale-[1.02] relative">
+<img alt="Product Image" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Avant-garde fashion portrait of a model in a dark architectural space with cinematic red lighting highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg7cafWIGXiqLLsnG-pzuIMFgCUx10_lScjtbthfdWQjysDGrqo2vvmmhT2ZAIURDcjK98x7XpIf4-rUTLUSam5_YisQralWcnuf5FPDzzMZy3g8MMPzGMkMYWlxyAJVwp-JhczrsP3w6fMlT8-Z_QhusV2I1MslexHSWET3heX0aM8e1JNteEIRoVCp88d4-zVhU1ufWMNWOyGmd3OnPIW2okLSWBlhUbDX5qCuZ5eFAbdG7_B_Le1NbFPpSufyezFTPuS4hU_Nw2"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="mt-6 flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-white font-headline text-lg font-bold tracking-tight">Nemoralia Obsidian Vest</h3>
+<span class="text-white font-body font-medium">$420.00</span>
+</div>
+<p class="text-on-surface-variant text-xs font-label uppercase tracking-widest mb-4">Midnight Series 01</p>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-lg font-headline text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 active:scale-95">Agregar al carrito</button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group relative">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-700 group-hover:scale-[1.02] relative">
+<img alt="Product Image" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Modern minimalist streetwear clothing draped over an obsidian stone pedestal with deep blue and red atmospheric light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwiCNPQsJDrOTQd517u2s8A7c3hv_wveSgUxgUE6S94OdW0YoJsGh9ntB8mZ0X0uMUhihwq2xgG32XS2yHLSs2WNMAUFWLKwwmUwNlc8ybLjQ2OPmK7MMk7XYbfwfbxwOYvEO4ia4OI_4ImK79GwFvMfVxSg3fb75--ZcHWpwDupJmoWgrT-s-Lz1RO02E7WBe9ItsFeZX9zRMO-JTJnFIdCwfITpgxKU8WmiUZbm4KwZ6yvGq6up73thkP_xDCtcT8sRMFMMCvKDc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="mt-6 flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-white font-headline text-lg font-bold tracking-tight">Ethereal Nocturne Coat</h3>
+<span class="text-white font-body font-medium">$1,250.00</span>
+</div>
+<p class="text-on-surface-variant text-xs font-label uppercase tracking-widest mb-4">Midnight Series 02</p>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-lg font-headline text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 active:scale-95">Agregar al carrito</button>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="group relative lg:translate-y-12">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-700 group-hover:scale-[1.02] relative">
+<img alt="Product Image" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Luxury midnight leather boots on a dark glass floor with soft smoke effects and sharp red laser light highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZUt3xCFkpaB3N_lNTyvtN0o06jzuoNDsVvE3N2MP6Uf3YDK9_Rq_YS3ULyYMmFDpJO_2Nju8xFwD3XClqR3PQ5A6PbmNGaNPqW4dyC5xLfojdQcW5qmVFuHKk-xRd3QlxFPyTmPv0yvGtgaeKbZm_4sNHog2A9DcYEXyM4YW4tt9D3X5uTzdsHpRtOfxJhPe_oRqdLkmMQ9m6ZIu4RV0NvZkIh8EN69mJEMvOEkQwg-vAm4onk-hC6fJ2JgKyBj6E5hwdhuOJ7iBG"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="mt-6 flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-white font-headline text-lg font-bold tracking-tight">Void Leather Boots</h3>
+<span class="text-white font-body font-medium">$680.00</span>
+</div>
+<p class="text-on-surface-variant text-xs font-label uppercase tracking-widest mb-4">Accessories Series</p>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-lg font-headline text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 active:scale-95">Agregar al carrito</button>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="group relative">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-700 group-hover:scale-[1.02] relative">
+<img alt="Product Image" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Editorial close up of a high fashion black shirt with intricate texture details in a low light studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoNMgxtsPVASHdXbKZFuB0H5PQAnecc8s03t5ToWlvb4Ap714YtGWzNFfZD40F7q9mOvilE9NWQtMd7V5S5DqaPrhxi2r6XBdzWqZ2lPzqBRQd3egooEWjBUdG-qSyVcTCzARWQoP-rXciVpT-yBdeIDPxMMLROvzYcMQQFcz2m4mOxAoyPQMAovNEBeMXK02o69mIcSpkOrKhOifpIEsDD6ZOG-m80vlDR_zN7hgvPkdoHi1r_TTH8MbBAEOusMgRjP7IT5vxmzWN"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="mt-6 flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-white font-headline text-lg font-bold tracking-tight">Textured Shadow Shirt</h3>
+<span class="text-white font-body font-medium">$290.00</span>
+</div>
+<p class="text-on-surface-variant text-xs font-label uppercase tracking-widest mb-4">Midnight Series 03</p>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-lg font-headline text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 active:scale-95">Agregar al carrito</button>
+</div>
+</article>
+<!-- Product Card 5 -->
+<article class="group relative">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-700 group-hover:scale-[1.02] relative">
+<img alt="Product Image" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Sleek black high-waisted trousers displayed in a gallery setting with architectural shadows and a single red spotlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoElLPJKc3k2fXWH9FP2YS4AVYtM_2UY7Lx6R-43VZcEilf_dHDb8k83CwuGnKnEGOXl3neCbsVZBgGC2Qgem1vOuWmVQ2A_wcRX25H01r3jfhRiL8b6rSngWm2N2epluK_ZNMT2QNLwLpvsHdgh2mQ9HPEGXH80xzRoFavL7vHU4SRkYW18kwe1xWmhX0jQluw2aKlYg1td9iQ-5PltvOFRPZ5meWIHzQ1HKvlBeyJny_ElFHu_kN_7K9hHrQsQFpeE7HKqzJJ_ww"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="mt-6 flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-white font-headline text-lg font-bold tracking-tight">Abyssal Trousers</h3>
+<span class="text-white font-body font-medium">$350.00</span>
+</div>
+<p class="text-on-surface-variant text-xs font-label uppercase tracking-widest mb-4">Midnight Series 04</p>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-lg font-headline text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 active:scale-95">Agregar al carrito</button>
+</div>
+</article>
+<!-- Product Card 6 -->
+<article class="group relative lg:translate-y-12">
+<div class="aspect-[3/4] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-700 group-hover:scale-[1.02] relative">
+<img alt="Product Image" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Conceptual jewelry piece in dark silver on a black velvet background with dramatic high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEW_FA76UoqMjfRdoJqRxPgLgkH_CpU5y_E7C8-q1XMcrnXnNRrImqbrupffDPId0uucyIh-pcTdDGdwmKUxGvzpYmvTU9qmg2bCkF-xDTDFf7l9U1qzTAyvKF9yWh3DsqALLHnmzpGq15mZdCAgmwZIb1uZUIALYXS6W7DddSo0i3MeoA-7j-zNj-iC76XvzQbAkVpqXd4umZWbzwQ1Ykgl74ofDt_2a-lfDlp0nh32ijee9zyz0nvQnCqAs7xhytmn8Dm8Y5wQ5d"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+</div>
+<div class="mt-6 flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-white font-headline text-lg font-bold tracking-tight">Eclipse Silver Chain</h3>
+<span class="text-white font-body font-medium">$510.00</span>
+</div>
+<p class="text-on-surface-variant text-xs font-label uppercase tracking-widest mb-4">Art Editions</p>
+<button class="w-full bg-primary-container text-on-primary-container py-4 rounded-lg font-headline text-xs font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 active:scale-95">Agregar al carrito</button>
+</div>
+</article>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#12121d] w-full py-12 border-t border-white/10">
+<div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-bold text-white font-headline">Nemoralia</div>
+<div class="flex flex-wrap justify-center gap-8 font-label text-xs tracking-widest uppercase">
+<a class="text-gray-500 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-gray-500 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-gray-500 hover:text-white transition-colors" href="#">Shipping Info</a>
+<a class="text-gray-500 hover:text-white transition-colors" href="#">Contact Us</a>
+</div>
+<div class="text-gray-500 font-label text-xs tracking-widest uppercase">
+                © 2024 Nemoralia. Midnight Editorial Collection.
+            </div>
+</div>
+</footer>
+</body></html>

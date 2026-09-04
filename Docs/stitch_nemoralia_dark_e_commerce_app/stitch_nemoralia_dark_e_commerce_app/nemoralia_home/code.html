@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nemoralia | Elegancia en la Oscuridad</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800&amp;family=Manrope:wght@300;400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#ffdad6",
+                    "error": "#ffb4ab",
+                    "on-primary-container": "#fff7f6",
+                    "surface-variant": "#343440",
+                    "error-container": "#93000a",
+                    "inverse-primary": "#c00016",
+                    "surface-bright": "#383844",
+                    "surface": "#12121d",
+                    "on-primary": "#690007",
+                    "on-primary-fixed": "#410003",
+                    "on-primary-fixed-variant": "#93000e",
+                    "primary-fixed-dim": "#ffb4ac",
+                    "primary": "#ffb4ac",
+                    "on-secondary-fixed": "#410003",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary": "#003355",
+                    "surface-container-low": "#1b1a26",
+                    "on-secondary-container": "#ff9990",
+                    "tertiary-fixed": "#d0e4ff",
+                    "secondary-fixed-dim": "#ffb4ac",
+                    "tertiary-container": "#0077bf",
+                    "inverse-surface": "#e3e0f1",
+                    "surface-container-high": "#292935",
+                    "on-secondary": "#690007",
+                    "tertiary-fixed-dim": "#9acbff",
+                    "on-surface-variant": "#e8bcb8",
+                    "on-tertiary-fixed": "#001d34",
+                    "secondary": "#ffb4ac",
+                    "surface-container": "#1f1f2a",
+                    "background": "#12121d",
+                    "surface-container-lowest": "#0d0d18",
+                    "on-surface": "#e3e0f1",
+                    "outline": "#ae8783",
+                    "surface-dim": "#12121d",
+                    "on-background": "#e3e0f1",
+                    "on-error": "#690005",
+                    "tertiary": "#9acbff",
+                    "on-tertiary-container": "#f7f9ff",
+                    "primary-fixed": "#ffdad6",
+                    "secondary-container": "#8d1416",
+                    "on-tertiary-fixed-variant": "#004a79",
+                    "inverse-on-surface": "#302f3b",
+                    "surface-tint": "#ffb4ac",
+                    "on-secondary-fixed-variant": "#8d1416",
+                    "primary-container": "#e40e20",
+                    "surface-container-highest": "#343440",
+                    "outline-variant": "#5e3f3c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Epilogue"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #12121d;
+            color: #e3e0f1;
+            font-family: 'Manrope', sans-serif;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at center, rgba(228, 14, 32, 0.05) 0%, rgba(18, 18, 29, 0) 70%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#12121d]/80 backdrop-blur-lg bg-gradient-to-b from-[#1b1a26] to-transparent shadow-none">
+<div class="max-w-screen-2xl mx-auto px-8 flex justify-between items-center h-24">
+<!-- Brand Logo -->
+<div class="text-2xl font-bold tracking-tighter text-white font-headline">
+                Nemoralia
+            </div>
+<!-- Navigation Links -->
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-headline tracking-tight text-sm uppercase font-semibold text-white relative after:content-[''] after:absolute after:-bottom-2 after:left-1/2 after:-translate-x-1/2 after:w-1.5 after:h-1.5 after:bg-[#E40E20] after:rounded-full" href="#">Home</a>
+<a class="font-headline tracking-tight text-sm uppercase font-semibold text-gray-400 hover:text-white transition-colors duration-300" href="#">Catálogo</a>
+<a class="font-headline tracking-tight text-sm uppercase font-semibold text-gray-400 hover:text-white transition-colors duration-300" href="#">Carrito</a>
+</div>
+<!-- Trailing Actions -->
+<div class="flex items-center space-x-6">
+<a class="text-gray-400 hover:text-white transition-all duration-300 font-headline text-sm uppercase font-semibold active:scale-95" href="#">Login</a>
+<a class="bg-primary-container text-on-primary-container px-6 py-2.5 rounded-lg font-headline text-sm uppercase font-semibold transition-all duration-300 hover:bg-secondary-container active:scale-95 shadow-lg shadow-primary-container/20" href="#">Registro</a>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 hero-gradient"></div>
+<!-- Atmospheric Layer -->
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-primary-container/10 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-1/4 -left-20 w-80 h-80 bg-tertiary/5 blur-[100px] rounded-full"></div>
+<div class="max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center relative z-10">
+<div class="md:col-span-7">
+<span class="inline-block px-4 py-1.5 rounded-full bg-surface-container-high border border-outline-variant/20 text-xs font-label uppercase tracking-[0.2em] text-primary-container mb-8">
+                        Midnight Editorial Collection
+                    </span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter leading-[0.9] text-white mb-6">
+                        Nemoralia
+                    </h1>
+<p class="text-xl md:text-2xl font-body text-on-surface-variant font-light tracking-wide mb-10 max-w-xl">
+                        Elegancia en la Oscuridad. Curamos piezas de diseño que cobran vida cuando el sol se pone.
+                    </p>
+<div class="flex flex-wrap gap-6">
+<button class="px-10 py-5 bg-primary-container text-on-primary-container rounded-lg font-headline font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(228,14,32,0.3)] active:scale-95">
+                            Ver Catálogo
+                        </button>
+<button class="px-10 py-5 bg-transparent border border-outline-variant/30 text-white rounded-lg font-headline font-bold uppercase tracking-widest text-sm transition-all duration-300 hover:bg-white/5 active:scale-95">
+                            Explorar Lookbook
+                        </button>
+</div>
+</div>
+<!-- Featured Editorial Image -->
+<div class="md:col-span-5 relative">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-surface-container-low shadow-2xl relative">
+<img class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="high-fashion editorial portrait of a person in dark avant-garde clothing against a minimalist architectural background with dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXWAq1vZX7VjgQ5HUQBiU7z-pFwcLJZRw82VohK69oZkqp9zHGVbktBlvGxzkymAX3U7XuT5Wqq0Elr77p3tDWraW6ZcfDWzanlQmgSBFZAgk7QsqJASaEBp3d4ePmY9a9Ao_T_Yi_5c6ZKGHqQuwznPBSlj7dFtTE5462c5UPNOBT67K8SD6JS57wjalXP8yBqxCMbJJt4u1s7avacuQTyvaBwjy11k7Q1BWZ2YuozXymgycHMj-aDj5qceaAtmvBZgUNlmqfQDVZ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-60"></div>
+</div>
+<!-- Floating Accent -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-high p-6 rounded-lg shadow-2xl backdrop-blur-md border border-outline-variant/10 max-w-[200px]">
+<p class="text-[10px] font-label uppercase tracking-widest text-primary-container mb-2">New Arrival</p>
+<p class="text-sm font-headline font-bold text-white leading-tight">Sombra Nocturna Collection Vol. 1</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products Section -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex justify-between items-end mb-20">
+<div>
+<h2 class="text-4xl md:text-5xl font-headline font-bold tracking-tighter text-white mb-4">Piezas Destacadas</h2>
+<p class="text-on-surface-variant font-body max-w-md">Una selección de artículos diseñados para elevar la estética del espacio contemporáneo.</p>
+</div>
+<a class="group flex items-center gap-2 text-primary-container font-headline font-bold uppercase text-xs tracking-widest transition-all" href="#">
+                        Ver Todo el Catálogo
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Product Grid (Asymmetric Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Product 1 (Large) -->
+<div class="md:col-span-8 group">
+<div class="bg-surface-container-high rounded-xl overflow-hidden flex flex-col md:flex-row h-full transition-all duration-500 hover:scale-[1.01]">
+<div class="md:w-3/5 h-80 md:h-auto relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="luxury designer minimal watch on black velvet display with sharp architectural lighting and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDISvnIPzAlbNZzC5UDYL8drdyc7mUHIwFlZxXhO0ss3H2mMUelWFvTuGk94Jr1CTnrAXjAvd5ubzmhCGHhiOlb3Wek2PlZYUO4ch2vOQXHZkOTi60dcNIKa4nB9pi_LSe4csFVZ95F5GT5u0XJPisUfKB_qpt-Nosm7spJ2S7yqEpu6w_OsHUNep-V6WtcVG2RkKxJog4NXyZjuuL44jBQOrR75YCzcNUuLY7wr-6FC1PHM-Bn-r93zpx_Ec9ujHt1_9s2Usdjee-U"/>
+</div>
+<div class="md:w-2/5 p-10 flex flex-col justify-center">
+<p class="text-xs font-label uppercase tracking-widest text-primary-container mb-4">Limited Edition</p>
+<h3 class="text-3xl font-headline font-bold text-white mb-4">Cronos Obsidian</h3>
+<p class="text-on-surface-variant font-body mb-8 text-sm leading-relaxed">Reloj de precisión con acabado en titanio negro mate y cristal de zafiro ahumado.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-2xl font-headline font-light text-white">$450.00</span>
+<button class="bg-white/5 hover:bg-primary-container hover:text-white p-3 rounded-full transition-all active:scale-90 border border-outline-variant/20">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-high rounded-xl overflow-hidden h-full flex flex-col transition-all duration-500 hover:scale-[1.01]">
+<div class="h-80 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="premium matte black headphones resting on a minimalist concrete plinth with soft directional light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCkRQxq8y-vH0gEuUluM7n8NPiU7E9Ff9v5Jn9axUQc1c5B-bRkONOVECkYABWqQ7um53J4fKG0vIjT46S2jmAc1Nzu8OZZ4crZzgiTbg8MzJCiOdS46GH58f9k3_GDERoEP9WjVmkhSht_0VGgmfgKW6gDROkMGYpYZzQsZr1giT2tnttsKbIXuwSuuHx8N6pPcbOhCLLLQ8A4i8nBlRckMPBKEPz1NGkmdVqY5SbS-cxKtr3H8eCwrsxAoWueIiUJncByeRIqRtQ"/>
+</div>
+<div class="p-8 flex flex-col grow">
+<h3 class="text-xl font-headline font-bold text-white mb-2">Sonic Noir</h3>
+<p class="text-sm text-on-surface-variant font-body mb-6">Aislamiento acústico absoluto.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-lg font-headline font-light text-white">$320.00</span>
+<button class="text-primary-container hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-weight="fill">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="md:col-span-4 group">
+<div class="bg-surface-container-high rounded-xl overflow-hidden h-full flex flex-col transition-all duration-500 hover:scale-[1.01]">
+<div class="h-80 relative overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="handcrafted dark leather messenger bag on a rustic wood stool in a dimly lit studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATnYtQjdjxWrlmz7pnluW5cx5u2z4bvMRuP41Hi-Ls86fDGBa93mYZCdzyKDOLoJqBsinUvBvEWxYk0DbnY1F--2kR-ndahg3lHfXYrlcRISx73ngLygWfC-B-z3ApUyksk-AuKzOZtEshuv0IGRXKNEcSh2zwLBCMLZXNFuteIXG1hOLizWjknQy5CQBSUiHf7pSrnTgOkZNPMIzGUIIVamhjKzQWN57PNNoA-MGCEY46YkZ5n_BrRTxfZwOCTmyxRI0F6dGbaj8W"/>
+</div>
+<div class="p-8 flex flex-col grow">
+<h3 class="text-xl font-headline font-bold text-white mb-2">Portfolio Nero</h3>
+<p class="text-sm text-on-surface-variant font-body mb-6">Cuero artesanal de grano completo.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-lg font-headline font-light text-white">$210.00</span>
+<button class="text-primary-container hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-weight="fill">add_circle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Product 4 (Long/Wide) -->
+<div class="md:col-span-8 group">
+<div class="bg-surface-container-high rounded-xl overflow-hidden flex flex-col md:flex-row h-full transition-all duration-500 hover:scale-[1.01]">
+<div class="md:w-1/2 p-10 flex flex-col justify-center order-2 md:order-1">
+<p class="text-xs font-label uppercase tracking-widest text-primary-container mb-4">Curated Design</p>
+<h3 class="text-3xl font-headline font-bold text-white mb-4">Lux Labyrinth</h3>
+<p class="text-on-surface-variant font-body mb-8 text-sm leading-relaxed">Lámpara de ambiente con estructura de acero cepillado y luz cálida filtrada.</p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-2xl font-headline font-light text-white">$185.00</span>
+<button class="bg-white/5 hover:bg-primary-container hover:text-white p-3 rounded-full transition-all border border-outline-variant/20">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+<div class="md:w-1/2 h-80 md:h-auto relative overflow-hidden order-1 md:order-2">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="modern minimalist floor lamp in a dark apartment with soft warm orange glow reflecting off dark floors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL7DDrKc_hWPIMRYLxT-45Fp4Vi09wqfcrd_cIcfXdd6t-qtah0sqsOdkDqvFgNv79eaxHDTIfsHvBh34P7tJ5kbW_Sbba9nvZ67ZHRm0idUutBeilpg8CqsriOU8huSMfnJnFj0CoQXjsdrqM1oJ0-wL7KzNslUbFLa0q7kemOzpdUyAqXlvE1snjSIs16PPVYq8I2wi9luh_qf8q0BVd8SgzNOh5JzpprMZ8gMFuBRXrcinFg8l_Oc423Y6rmc2QWo1_duDC3Rcn"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="aspect-square bg-surface-container rounded-lg overflow-hidden border border-outline-variant/10">
+<img class="w-full h-full object-cover opacity-60" data-alt="cinematic shot of high-end garments hanging in a dimly lit designer boutique with atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKpBHgh_QZxuB1eFBftra2IvZew4b0BpOt2Gmyu2P9xG3NkO6OU4RN4S7EI7n9npOezZCqdIXylX80GwDtrirah4x86tjVQtCIbgLzZaOe9OiT4h6eWVWqgncocINhnfF9slQlNl4RIWFDQb8vdyooEgoNjCdJqe249ravB6V2TZF3JnfGz-5DxvVp-CjTfEzbdzEob4Al-TlLtmcks7hAwzvsZ65Kl-IUF6mkvYclaZC29pLRUF-wqGyV9vhqBigORpLODCS5xeGW"/>
+</div>
+<div class="absolute -top-12 -right-12 w-48 h-48 border-t border-r border-primary-container/30"></div>
+<div class="absolute -bottom-12 -left-12 w-48 h-48 border-b border-l border-primary-container/30"></div>
+</div>
+<div>
+<h3 class="text-5xl font-headline font-bold text-white mb-8 leading-[1.1]">La Filosofía del Oscurantismo.</h3>
+<p class="text-on-surface-variant text-lg font-body mb-8 leading-relaxed">
+                        No buscamos la luz, sino la forma en que los objetos interactúan con la sombra. Nemoralia nace de la necesidad de crear un refugio estético para aquellos que encuentran belleza en la penumbra.
+                    </p>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-container">verified</span>
+<div>
+<h4 class="font-headline font-bold text-white uppercase text-xs tracking-widest mb-1">Calidad Artesanal</h4>
+<p class="text-sm text-on-surface-variant font-body">Cada pieza es seleccionada por su durabilidad y carácter único.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary-container">auto_awesome</span>
+<div>
+<h4 class="font-headline font-bold text-white uppercase text-xs tracking-widest mb-1">Diseño Atemporal</h4>
+<p class="text-sm text-on-surface-variant font-body">Estética que trasciende las tendencias efímeras del mercado.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-24 bg-surface-container-highest/30 backdrop-blur-sm">
+<div class="max-w-screen-xl mx-auto px-8 text-center">
+<h2 class="text-3xl md:text-5xl font-headline font-bold text-white mb-6">Únete al Círculo Nocturno</h2>
+<p class="text-on-surface-variant font-body text-lg mb-12 max-w-2xl mx-auto">Suscríbete para recibir lanzamientos exclusivos y acceso anticipado a nuestras colecciones cápsula.</p>
+<form class="max-w-md mx-auto flex gap-2">
+<input class="grow bg-surface-container-high border-none rounded-lg px-6 py-4 text-white focus:ring-2 focus:ring-primary-container font-label text-sm transition-all" placeholder="Email Address" type="email"/>
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-headline font-bold uppercase tracking-widest text-xs transition-all hover:bg-secondary-container">
+                        Unirse
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 bg-[#12121d] border-t border-white/10">
+<div class="max-w-screen-2xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-lg font-bold text-white font-headline">Nemoralia</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label text-xs tracking-widest uppercase text-gray-500 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="font-label text-xs tracking-widest uppercase text-gray-500 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-label text-xs tracking-widest uppercase text-gray-500 hover:text-white transition-colors" href="#">Shipping Info</a>
+<a class="font-label text-xs tracking-widest uppercase text-gray-500 hover:text-white transition-colors" href="#">Contact Us</a>
+</div>
+<div class="font-label text-xs tracking-widest uppercase text-gray-500">
+                © 2024 Nemoralia. Midnight Editorial Collection.
+            </div>
+</div>
+</footer>
+</body></html>

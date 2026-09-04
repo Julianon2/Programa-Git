@@ -1,0 +1,12 @@
+.login-input {
+  font-size: 25px;
+}
+
+.login-input::placeholder {
+  font-size: 16px;
+}
+
+.mb-3-login {
+  margin-bottom: 1.0rem;
+  font-size: 20px;
+}
