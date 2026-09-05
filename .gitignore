@@ -27,4 +27,6 @@ dist-ssr
 ProductosCRUD-JDBC/bin/
 NemoraliaWeb/build/
 NemoraliaSpring/target/
+NemoraliaAuth/target/
+NemoraliaAPI/target/
 *.class
