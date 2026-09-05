@@ -25,4 +25,5 @@ dist-ssr
 
 # Java - clases compiladas (no el codigo fuente)
 ProductosCRUD-JDBC/bin/
+NemoraliaWeb/build/
 *.class

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nemoralia - Registro de producto</title>
+</head>
+<body>
+    <h1>Nemoralia - Registro de producto</h1>
+
+    <!-- Formulario HTML que envia los datos al Servlet mediante POST -->
+    <form action="ProductoServlet" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="descripcion">Descripcion:</label><br>
+        <input type="text" id="descripcion" name="descripcion"><br><br>
+
+        <label for="precio">Precio:</label><br>
+        <input type="number" step="0.01" id="precio" name="precio" required><br><br>
+
+        <label for="stock">Stock:</label><br>
+        <input type="number" id="stock" name="stock" required><br><br>
+
+        <button type="submit">Guardar producto</button>
+    </form>
+
+    <br>
+
+    <!-- Enlace que consulta el listado mediante GET (parametro accion=listar) -->
+    <a href="ProductoServlet?accion=listar">Ver listado de productos registrados</a>
+</body>
+</html>
