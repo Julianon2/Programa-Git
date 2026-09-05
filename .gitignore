@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Java - clases compiladas (no el codigo fuente)
+ProductosCRUD-JDBC/bin/
+*.class
