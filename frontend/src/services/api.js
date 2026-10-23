@@ -1,19 +1,21 @@
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+// URL de NemoraliaAPI. En producción se usa la API desplegada en Render.
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://nemoralia-api.onrender.com/api';
 
 async function request(endpoint, options = {}) {
   const response = await fetch(`${BASE_URL}${endpoint}`, {
     headers: { 'Content-Type': 'application/json' },
     ...options,
   });
-  if (!response.ok) throw new Error(`Error ${response.status}`);
-  return response.json();
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(data.mensaje || `Error ${response.status}`);
+  return data;
 }
 
 export const authService = {
   login: (email, password) =>
-    request('/auth/login', { method: 'POST', body: JSON.stringify({ email, password }) }),
+    request('/auth/login', { method: 'POST', body: JSON.stringify({ nombreUsuario: email, contrasena: password }) }),
   registro: (data) =>
-    request('/auth/registro', { method: 'POST', body: JSON.stringify(data) }),
+    request('/auth/registro', { method: 'POST', body: JSON.stringify({ nombreUsuario: data.email, contrasena: data.password }) }),
   recuperar: (email) =>
     request('/auth/recuperar', { method: 'POST', body: JSON.stringify({ email }) }),
 };
