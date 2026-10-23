@@ -30,3 +30,9 @@ NemoraliaSpring/target/
 NemoraliaAuth/target/
 NemoraliaAPI/target/
 *.class
+
+# Android - NemoraliaMobile
+NemoraliaMobile/build/
+NemoraliaMobile/app/build/
+NemoraliaMobile/.gradle/
+NemoraliaMobile/local.properties

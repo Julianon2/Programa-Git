@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.NemoraliaMobile" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nemoralia_primary</item>
+        <item name="colorPrimaryVariant">@color/nemoralia_primary_dark</item>
+        <item name="colorAccent">@color/nemoralia_accent</item>
+    </style>
+</resources>

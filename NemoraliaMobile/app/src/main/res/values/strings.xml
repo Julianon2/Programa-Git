@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Nemoralia Mobile</string>
+    <string name="estado_cargando">Cargando catálogo…</string>
+    <string name="estado_vacio">No hay productos registrados.</string>
+    <string name="estado_ok">%1$d productos cargados desde NemoraliaAPI.</string>
+    <string name="estado_error">No se pudo conectar con el servidor: %1$s</string>
+    <string name="formato_precio_stock">%1$s · Stock: %2$d</string>
+</resources>
